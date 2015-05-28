@@ -47,7 +47,7 @@ mr.spaces = [];
 mr.voxelSize = mr.hdr.pixdim; %(1:3);
 
 mr.dims = size(mr.data);
-mr.extent = mr.dims(1:3) .* mr.voxelSize(1:3);
+mr.extent = mr.dims.* mr.voxelSize;
 
 mr.info.subject = mr.hdr.descrip;
 
